@@ -208,7 +208,10 @@ footer a{
 	border-radius: 50%;
 }
 @media only screen and (max-device-width: 780px){
-
+.bishop{
+          width: 80%;
+          height: auto;
+}
 #serv{
 	border: none;
 	border-radius: 4px 4px;
