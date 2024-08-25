@@ -9,7 +9,6 @@ const ipeg = document.querySelector('.ipeg');
 const jot = document.querySelector('.jot');
 const overlay = document.querySelector('#overlay');
 const meddy = window.matchMedia("(max-width: 780px)");
-const contact = document.querySelector('.pla').style.overflowX = 'hidden';
 
 
 /*if(!meddy.matches) {
