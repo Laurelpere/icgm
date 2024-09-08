@@ -1,0 +1,402 @@
+body{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+main h1{
+	color: ;
+}
+main h2{
+	color: ;
+}
+main h3{
+	color: ;
+}
+main h4{
+	color: ;
+}
+main p{
+	color: ;
+}
+/* Card container */
+.card-container{
+	 display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if there are too many cards */
+    gap: 30px; /* Space between cards */
+    justify-content: center;
+    margin-top: 100px;
+    background-color: #557C56;
+    max-width: 80%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    position: relative;
+    top: -150px; //Move the cards up to overlap the header 
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s;
+    
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card content (title, description, button) */
+.card-content {
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Card title */
+.card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+/* Card description */
+.card-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Card button */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+/* Button hover effect */
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes backInUp {
+  0% {
+    transform: translateY(200px) scale(0.7);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-10px) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.backInUp {
+  animation: backInUp 2s ease both;
+}
+
+.read-more{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	padding: 20px 20px;
+	background-color: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+.read-less{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	padding: 20px 20px;
+	background-color: red;
+	color: white;
+	border: none;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+article{
+	margin: 100px 18px 100px 18px;
+/*	background-color: rgb(235, 211, 248, 0.3);
+	padding: 50px;*/
+	animation: backInUp 2s ease both;
+}
+article span{
+	display: none;
+	color: darkblue;
+	font-size: 20px;
+}
+.nav-ele{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+
+}
+.sub:hover{
+	font-size: 25px;
+	font-weight: bold;
+
+}
+#logo{
+	width: 40px;
+	height: auto;
+	background-color: white;
+	border-radius: 100%;
+}
+.sub{
+  padding-right: 12px;
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+
+}
+.main{
+	font-family: "Alfa Slab One", serif;
+    font-weight: 900;
+    font-style: normal;
+	font-size: 30px;
+	display: inline-block;
+	color: white;
+}
+.list-item{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  padding-left: 8px;
+  max-width: 300px;
+  text-align: left;
+}
+.nav-list{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.list-item > a{
+	color: white;
+	text-decoration: none;
+}
+a{
+	text-decoration: none;
+}
+#hed{
+	font-size: 60px;
+}
+#ped{
+	font-size: 30px;
+}
+.con-tent{
+	position: relative; /* Create positioning context */
+    z-index: 1; 
+	text-align: center;
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}
+#overlay{
+	/*background-color: #1B5E20;*/
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: 
+	linear-gradient(to bottom, black, transparent);
+	opacity: 0.6;
+}
+#body-img{
+	  margin-top: 0;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center center;
+	  background-attachment: fixed;
+	  image-resolution: 1500dpi;
+	  width: 100%;
+	  height: 100vh;
+}
+.btn1{
+	background-color: #557C56;
+	border: none;
+	border-radius: 8px 8px;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+}
+.btn1 a{
+	color: white;
+}
+main{
+	text-align: center;
+	text-decoration: none;
+}
+main li{
+	list-style: none;
+}
+main img{
+	border: 8px solid black;
+	width: 50%;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#Founder{
+    margin-top: 40px;
+	margin-bottom: 40px;
+}
+#serv{
+	border: none;
+	border-radius: 4px 4px;
+	width: 60%;
+	height: auto;
+}
+footer{
+	width: 100%;
+	background-color: black;
+	color: white;
+	display: inline-block;
+	margin-top: 100px;
+}
+footer p{
+	text-align: center;
+}
+footer li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+footer a{
+     color: white;
+	 text-decoration: none;
+}
+.unorder{
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.wors{
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+.bishop{
+}
+@media only screen and (max-device-width: 780px){
+.bishop{
+width: 80%;
+height: auto;
+}
+.wors{
+	width: 100%;
+	height: auto;
+}
+.card-container{
+	position: relative;
+    top: -60px; //Move the cards up to overlap the header 
+    z-index: 2;
+    background-color: white;
+}
+article{
+	margin: 100px 18px 100px 18px;
+	background-color: rgb(235, 211, 248, 0.3);
+	padding: 20px;
+	animation: backInUp 2s ease both;
+}
+#body-img{
+	width: 100%;
+	height: 70vh;
+}
+#overlay{
+	width: 100%;
+	height: 70vh;
+}
+#serv{
+	border: none;
+	border-radius: 4px 4px;
+	width: 100%;
+	height: auto;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.art-img{
+	width: 100%;
+	height: auto;
+}
+.main{
+	font-size: 30px;
+	display: inline-block;
+}
+.sub{
+  /*padding-right: 17px;
+  padding-left: 17px;*/
+  position: relative; /* Create positioning context */
+  z-index: 2;
+  font-size: 12px;
+  padding: 20px;
+  background-color:  rgba(54, 69, 79,0.9);
+}
+ul{
+	margin-top: 22px;
+}
+.list-item{
+	display: block;
+}
+.nav-list{
+	visibility: hidden;
+}
+.jot{
+	visibility: visible;
+}
+nav .sub:hover{
+	/*background-color: darkblue;
+	color: black;*/
+	padding: 7px;
+}
+.btn1{
+	background-color: red;
+	border: none;
+	border-radius: 8px 8px;
+	width: 100px;
+	height: 30px;
+	font-size: 12px;
+}
+#hed{
+	font-size: 30px;
+}
+#ped{
+	font-size: 20px;
+}
+.unorder{
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+}
